@@ -12,10 +12,10 @@ REM Check if langflow is installed
 pip show langflow >nul 2>&1
 IF %ERRORLEVEL% NEQ 0 (
     echo Installing langflow...
-    python -m pip install langflow --pre
+    python -m pip install langflow
 ) ELSE (
     echo Updating langflow...
-    python -m pip install langflow --pre --upgrade
+    python -m pip install langflow --upgrade
 )
 
 REM Start langflow
