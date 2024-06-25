@@ -12,10 +12,10 @@ source venv/bin/activate
 # Check if langflow is installed
 if ! pip show langflow > /dev/null 2>&1; then
     echo "Installing langflow..."
-    python -m pip install langflow --pre
+    python -m pip install langflow
 else
     echo "Updating langflow..."
-    python -m pip install langflow --pre --upgrade
+    python -m pip install langflow --upgrade
 fi
 
 # Start langflow
